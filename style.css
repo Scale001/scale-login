@@ -1,0 +1,64 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background:url('bk.jpeg') no-repeat center; 
+background-size: cover;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.login{height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.form{
+    position: relative;
+    background: rgb(0, 0, 0);
+    width:100%;
+    max-width:380px;
+    color: white;
+    padding: 80px 20px 30px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.form img{
+    position:absolute;
+    width:100px;
+    border-radius: 50%;
+    top: -40px;
+    left: 120px;
+}
+.form h2{text-align: center;
+letter-spacing: 3px;
+color: rgb(165, 65, 65);
+margin-bottom: 2rem;
+}
+.form .input1 input{
+    border:none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    color:inherit;
+}
+.form .input1 label{ 
+    position:relative;
+    top: -75px;
+    left: 0;
+    padding: 10px 0px;
+    transition: 3s ease-in-out;
+    pointer-events: none;
+}
+.form .input1 input:focus+label,
+.form .input1 input:valid+label
+{transform: translateY(-18px);
+color:red;
+font-size: .8rem;
+}
+#FG{display: none;}
